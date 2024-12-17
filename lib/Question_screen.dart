@@ -32,13 +32,17 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              textAlign: TextAlign.center,
-              currentQuestion.text,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+            SizedBox(
+              height: 60,
+              width: 120,
+              child: Text(
+                textAlign: TextAlign.center,
+                currentQuestion.text,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             const SizedBox(height: 30),

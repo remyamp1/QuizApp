@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/login.dart';
+import 'package:quizapp/quiz.dart';
 
 void main() {
-  runApp(const Loginexample());
+  runApp(const Quiz());
 }
 
 /* class MyApp extends StatelessWidget {

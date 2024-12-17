@@ -25,6 +25,12 @@ class _LoginexampleState extends State<Loginexample> {
       setState(() {
         _loginMessage = 'Login Successful';
       });
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => Quiz()), // Navigate to Quiz page
+      );
     } else {
       setState(() {
         _loginMessage = 'Invalid credentials! Please try again.';
@@ -34,14 +40,13 @@ class _LoginexampleState extends State<Loginexample> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Container(
-      decoration: BoxDecoration(
+    return Container(
+      /*  decoration: BoxDecoration(
           gradient: LinearGradient(begin: Alignment.topCenter, colors: <Color>[
         const Color.fromARGB(255, 172, 208, 236),
         Colors.blue,
         const Color.fromARGB(255, 2, 69, 124)
-      ])),
+      ])), */
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -147,6 +152,6 @@ class _LoginexampleState extends State<Loginexample> {
           ))
         ],
       ),
-    ));
+    );
   }
 }
